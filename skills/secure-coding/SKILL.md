@@ -69,6 +69,11 @@ service — is never a trust boundary you control.
   file uploads, HTTP headers, CORS, secrets, crypto, infrastructure.
   **Load before any security review or before shipping security-relevant
   code.**
+- `references/dependency-safety.md` — supply-chain attacks, vetting,
+  lockfiles and pinning, release-age delay, install scripts, limiting what
+  an install can steal, scanning, incident response. **Load before adding,
+  upgrading or installing dependencies, when touching a lockfile or CI
+  install step, or when a package may have been compromised.**
 
 ## Pre-flight (run before delivering security-relevant work)
 
